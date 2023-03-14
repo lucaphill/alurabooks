@@ -17,6 +17,9 @@
     display: flex;
     align-items: center;
 }
+.container__botao{
+    display: none;
+}
 .container__imagem{
     padding:  0.5em;
 }
@@ -35,6 +38,7 @@
 }
 .lista-menu__titulo{
     color: var(--laranja);
+    font-weight: 700;
 }
 .lista-menu__link{
     background:var(--azul-degrade);
