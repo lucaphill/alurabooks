@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap');
 @import url("style/banner.css");
 @import url("style/header.css");
+@import url("style/carrossel.css");
 :root{
     --cor-de-fundo: #EBECEE;
     --cor-principal: #FFFFFF;
