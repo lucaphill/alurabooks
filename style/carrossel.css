@@ -55,6 +55,6 @@
     color: var(--cor-principal);
     font-weight: 700;
     background-color: var(--laranja);
-    padding: 1em 2.2em 0.6;
+    padding: 1em 2.2em;
     text-decoration: none;
 }
