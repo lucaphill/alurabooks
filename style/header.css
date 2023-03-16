@@ -45,7 +45,61 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    text-fill-color: transparent;
     text-decoration: none;
     text-transform: uppercase;
+}
+.container__tilulo{
+    display: none;
+}
+.opcoes{
+    display: none;
+}
+
+@media screen and (min-width: 1024px){
+    .container__tilulo, .container__tilulo--negrito{
+        font-family: var(--fonte-secundaria);
+        font-size: 30px;
+        display: flex;
+    }
+    .container__tilulo{
+        font-weight: 400;
+    }
+    .container__tilulo--negrito{
+        font-weight: 700;
+    }
+    .opcoes{
+        display: flex;
+    }
+    .opcoes__itens{
+        padding: 1em;
+    }
+    .opcoes__link{
+        text-decoration: none;
+        color: var(--preto);
+    }
+    .container__imagem-trasparente{
+        display: none;
+    }
+    .cabecalho__menu-hamburger{
+        display: none;
+    }
+    .opcoes__botao:checked~.lista-menu{
+        display: block;
+        width: auto;
+    }
+    .opcoes__botao{
+        display: none;
+    }
+    .banner{
+        padding: 5em;
+    }
+    .banner__titulo{
+        font-size: 36px;
+    }
+    .banner__pesquisa{
+        width: 50%;
+    }
+    .banner__pesquisa::placeholder{
+        background-position: 4em;
+    }
 }
