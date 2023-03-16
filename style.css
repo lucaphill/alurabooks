@@ -3,6 +3,7 @@
 @import url("style/header.css");
 @import url("style/carrossel.css");
 @import url("style/topicos.css");
+@import url("style/contato.css");
 :root{
     --cor-de-fundo: #EBECEE;
     --cor-principal: #FFFFFF;
