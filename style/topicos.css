@@ -38,6 +38,11 @@
     .topicos__item{
         margin: 2.5em 0.5em;
     }
+    .topicos__link:hover {
+        color: var(--laranja);
+        border: 1px solid var(--cor-principal);
+        background-color: var(--branco);
+        }
 }
 @media screen and (min-width: 1728px) {
     .topicos{

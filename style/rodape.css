@@ -32,6 +32,12 @@ hr{
     .lista-rodape{
         display: block;
     }
+    .lista-rodape__link:hover{
+        color: var(--preto);
+    }
+    .lista-rodape__titulo:hover{
+        color: var(--laranja);
+    }
 }
 @media screen and (min-width: 1728px) {
     .lista-rodape {
