@@ -6,10 +6,17 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Alura Books</title>
         <link rel="stylesheet" href="reset.css">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
         <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
+        <link
+            rel="preconnect"
+            href="https://fonts.gstatic.com"
+            crossorigin="crossorigin">
+        <link
+            href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap"
+            rel="stylesheet">
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
@@ -38,7 +45,8 @@
                     </li>
                 </ul>
                 <img src="img/Logo.svg" alt="logo do alura books" class="container__imagem">
-                <h1 class="container__tilulo"><b class="container__tilulo--negrito">Alura</b>books</h1>
+                <h1 class="container__tilulo">
+                    <b class="container__tilulo--negrito">Alura</b>books</h1>
             </div>
             <ul class="opcoes">
                 <input type="checkbox" id="opcoes-menu" class="opcoes__botao">
@@ -62,14 +70,28 @@
                         <a href="#" class="lista-menu__link">Design & UX</a>
                     </li>
                 </ul>
-                <li class="opcoes__itens"><a href="#" class="opcoes__link">FAVORITOS</a></li>
-                <li class="opcoes__itens"><a href="#" class="opcoes__link">MINHA ESTANTE</a></li>
+                <li class="opcoes__itens">
+                    <a href="#" class="opcoes__link">FAVORITOS</a>
+                </li>
+                <li class="opcoes__itens">
+                    <a href="#" class="opcoes__link">MINHA ESTANTE</a>
+                </li>
             </ul>
             <div class="container">
                 <a href="#">
-                    <img src="img/Favoritos.svg" alt="meus favoritos" class="container__imagem container__imagem-trasparente"></a>
-                <a href="#"><img src="img/Compras.svg" alt="carrinho de compras" class="container__imagem"></a>
-                <a href="#"><img src="img/Usuário.svg" alt="perfil do usario" class="container__imagem"></a>
+                    <img
+                        src="img/Favoritos.svg"
+                        alt="meus favoritos"
+                        class="container__imagem container__imagem-trasparente">
+                </a>
+                <a href="#" class="container__link">
+                    <img src="img/Compras.svg" alt="carrinho de compras" class="container__imagem">
+                    <p class="container__texto">Minha sacola</p>
+                </a>
+                <a href="#" class="container__link">
+                    <img src="img/Usuário.svg" alt="perfil do usario" class="container__imagem">
+                    <p class="container__texto">Meu perfil</p>
+                </a>
             </div>
         </header>
         <section class="banner">
@@ -82,101 +104,110 @@
         </section>
         <section class="carrossel">
             <h2 class="carrosssel__titulo">Novos lançamentos</h2>
-            <div class="swiper">
-                <!-- Additional required wrapper -->
-                <!-- If we need pagination -->
-                <div class="swiper-pagination"></div>
+            <div class="carrossel__container">
+                <div class="swiper">
+                    <!-- Additional required wrapper -->
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
 
-                <div class="swiper-wrapper">
-                    <!-- Slides -->
-                    <div class="swiper-slide"><img src="/img/Arquitetura.svg" alt="livro sobre arquitetura de codigo"></div>
-                    <div class="swiper-slide"><img src="/img/Gestão2.svg" alt="livro sobre gestão de produtos"></div>
-                    <div class="swiper-slide"><img src="/img/Liderança.svg" alt="livro sobre liderança em Design"></div>
-                    <div class="swiper-slide"><img src="/img/Nodejs.svg" alt="livro sobre construir APIs com o nodeJs"></div>
-                    <div class="swiper-slide"><img src="/img/Portugol.svg" alt="logica de programação com portugol"></div>
-                    <div class="swiper-slide"><img src="/img/Tuning.svg" alt="livro sobre Tuning">
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide"><img src="/img/Arquitetura.svg" alt="livro sobre arquitetura de codigo"></div>
+                        <div class="swiper-slide"><img src="/img/Gestão2.svg" alt="livro sobre gestão de produtos"></div>
+                        <div class="swiper-slide"><img src="/img/Liderança.svg" alt="livro sobre liderança em Design"></div>
+                        <div class="swiper-slide"><img src="/img/Nodejs.svg" alt="livro sobre construir APIs com o nodeJs"></div>
+                        <div class="swiper-slide"><img src="/img/Portugol.svg" alt="logica de programação com portugol"></div>
+                        <div class="swiper-slide"><img src="/img/Tuning.svg" alt="livro sobre Tuning">
+                        </div>
                     </div>
-                </div>
 
-                <!-- If we need navigation buttons -->
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
-            </div>
-            <div class="card">
-                <!-- 1 linha -->
-                <div class="card__descricao">
-                    <!-- 1 coluna -->
-                    <div class="descricao">
-                        <h3 class="descricao__titulo">Talvez você também se interesse por..</h3>
-                        <h2 class="descricao__titulo-livro">Angular 11 e Firebase</h2>
-                        <p class="descricao__texto">Construindo uma aplicação integrada com a plataforma do Google.</p>
-                    </div>
-                    <!-- 2 coluna -->
-                    <img src="/img/Angular.svg" alt="Angular" class="descricao__imagem">
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
                 </div>
-                <!-- 2 linha -->
-                <div class="card__botoes">
-                    <!-- 1 colula -->
-                    <ul class="botoes">
-                        <li class="botoes__itens"><img src="/img/Favoritos.svg" alt="favorite o livro"></li>
-                        <li class="botoes__itens">
-                            <img src="/img/Compras.svg" alt="compre o livro"></li>
-                    </ul>
-                    <!-- 2 coluna -->
-                    <a href="#" class="botoes__ancora">Saiba mais</a>
+                <div class="card">
+                    <!-- 1 linha -->
+                    <div class="card__descricao">
+                        <!-- 1 coluna -->
+                        <div class="descricao">
+                            <h3 class="descricao__titulo">Talvez você também se interesse por..</h3>
+                            <h2 class="descricao__titulo-livro">Angular 11 e Firebase</h2>
+                            <p class="descricao__texto">Construindo uma aplicação integrada com a plataforma do Google.</p>
+                        </div>
+                        <!-- 2 coluna -->
+                        <img src="/img/Angular.svg" alt="Angular" class="descricao__imagem">
+                    </div>
+                    <!-- 2 linha -->
+                    <div class="card__botoes">
+                        <!-- 1 colula -->
+                        <ul class="botoes">
+                            <li class="botoes__itens"><img src="/img/Favoritos.svg" alt="favorite o livro"></li>
+                            <li class="botoes__itens">
+                                <img src="/img/Compras.svg" alt="compre o livro"></li>
+                        </ul>
+                        <!-- 2 coluna -->
+                        <a href="#" class="botoes__ancora">Saiba mais</a>
+                    </div>
                 </div>
             </div>
         </section>
 
         <section class="carrossel">
             <h2 class="carrosssel__titulo">Mais vendidos</h2>
-            <div class="swiper">
-                <!-- Additional required wrapper -->
-                <!-- If we need pagination -->
-                <div class="swiper-pagination"></div>
+            <div class="carrossel__container">
+                <div class="swiper">
+                    <!-- Additional required wrapper -->
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
 
-                <div class="swiper-wrapper">
-                    <!-- Slides -->
-                    <div class="swiper-slide"><img src="/img/Construct2.svg" alt="livro sobre Construct2"></div>
-                    <div class="swiper-slide"><img src="/img/Gestão.svg" alt="primeiro livro sobre gestão de produtos"></div>
-                    <div class="swiper-slide"><img src="/img/Javascript.svg" alt="livro sobre java script"></div>
-                    <div class="swiper-slide"><img src="/img/MetricasAgeis.svg" alt="livro sobre metricas Metricas Ageis"></div>
-                    <div class="swiper-slide"><img src="/img/ReactNative.svg" alt="livro sobre ReactNative"></div>
-                    <div class="swiper-slide"><img src="/img/UX.svg" alt="livro sobre UX">
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <img src="/img/Construct2.svg" alt="livro sobre Construct2"></div>
+                        <div class="swiper-slide">
+                            <img src="/img/Gestão.svg" alt="primeiro livro sobre gestão de produtos"></div>
+                        <div class="swiper-slide">
+                            <img src="/img/Javascript.svg" alt="livro sobre java script"></div>
+                        <div class="swiper-slide">
+                            <img src="/img/MetricasAgeis.svg" alt="livro sobre metricas Metricas Ageis"></div>
+                        <div class="swiper-slide">
+                            <img src="/img/ReactNative.svg" alt="livro sobre ReactNative"></div>
+                        <div class="swiper-slide">
+                            <img src="/img/UX.svg" alt="livro sobre UX"></div>
                     </div>
-                </div>
 
-                <!-- If we need navigation buttons -->
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
-            </div>
-            <div class="card">
-                <!-- 1 linha -->
-                <div class="card__descricao">
-                    <!-- 1 coluna -->
-                    <div class="descricao">
-                        <img src="img/Estrelinhas.svg" alt="5 estrelas de avaliação">
-                        <h3 class="descricao__titulo">Autora do mês</h3>
-                        <h2 class="descricao__titulo-livro">Juliana Agarikov</h2>
-                        <p class="descricao__texto">Analista de sistemas e escritora, Juliana é especialista em Front-End.
-                        </p>
-                    </div>
-                    <!-- 2 coluna -->
-                    <img
-                        src="/img/Perfil-escritora 1.svg"
-                        alt="imagem da escritora"
-                        class="descricao__imagem">
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
                 </div>
-                <!-- 2 linha -->
-                <div class="card__botoes">
-                    <!-- 1 colula -->
-                    <ul class="botoes">
-                        <li class="botoes__itens"><img src="/img/Favoritos.svg" alt="favorite o livro"></li>
-                        <li class="botoes__itens">
-                            <img src="/img/Compras.svg" alt="compre o livro"></li>
-                    </ul>
-                    <!-- 2 coluna -->
-                    <a href="#" class="botoes__ancora">Saiba mais</a>
+                <div class="card">
+                    <!-- 1 linha -->
+                    <div class="card__descricao">
+                        <!-- 1 coluna -->
+                        <div class="descricao">
+                            <img src="img/Estrelinhas.svg" alt="5 estrelas de avaliação">
+                            <h3 class="descricao__titulo">Autora do mês</h3>
+                            <h2 class="descricao__titulo-livro">Juliana Agarikov</h2>
+                            <p class="descricao__texto">Analista de sistemas e escritora, Juliana é especialista em Front-End.
+                            </p>
+                        </div>
+                        <!-- 2 coluna -->
+                        <img
+                            src="/img/Perfil-escritora 1.svg"
+                            alt="imagem da escritora"
+                            class="descricao__imagem"></div>
+                    <!-- 2 linha -->
+                    <div class="card__botoes">
+                        <!-- 1 colula -->
+                        <ul class="botoes">
+                            <li class="botoes__itens">
+                                <img src="/img/Favoritos.svg" alt="favorite o livro"></li>
+                            <li class="botoes__itens">
+                                <img src="/img/Compras.svg" alt="compre o livro"></li>
+                        </ul>
+                        <!-- 2 coluna -->
+                        <a href="#" class="botoes__ancora">Saiba mais</a>
+                    </div>
                 </div>
             </div>
         </section>

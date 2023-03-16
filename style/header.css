@@ -17,9 +17,6 @@
     display: flex;
     align-items: center;
 }
-.container__botao{
-    display: none;
-}
 .container__imagem{
     padding:  0.5em;
 }
@@ -48,10 +45,7 @@
     text-decoration: none;
     text-transform: uppercase;
 }
-.container__tilulo{
-    display: none;
-}
-.opcoes{
+.container__tilulo, .opcoes, .container__texto, .container__botao{
     display: none;
 }
 
@@ -90,16 +84,23 @@
     .opcoes__botao{
         display: none;
     }
-    .banner{
-        padding: 5em;
+    
+}
+@media screen and (min-width: 1728px) {
+    .container__link{
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        font-size: 20px;
+        color: var(--preto);
     }
-    .banner__titulo{
-        font-size: 36px;
+    .cabecalho{
+        padding: 0 3em;
     }
-    .banner__pesquisa{
-        width: 50%;
+    .opcoes{
+        margin-right: auto;
     }
-    .banner__pesquisa::placeholder{
-        background-position: 4em;
+    .container__texto{
+        display: block;
     }
 }
