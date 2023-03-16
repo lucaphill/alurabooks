@@ -7,6 +7,9 @@ hr{
 .lista-rodape{
     display: none;
 }
+.quebra_linha-trasparente{
+    display: none;
+}
 @media screen and (min-width: 1024px) {
     .rodape {
         display:flex;
@@ -37,6 +40,9 @@ hr{
     }
     .lista-rodape__titulo:hover{
         color: var(--laranja);
+    }
+    .quebra_linha-trasparente{
+        display: block;
     }
 }
 @media screen and (min-width: 1728px) {
